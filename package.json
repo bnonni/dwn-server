@@ -93,7 +93,8 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "npm run build:esm && cp -R tests/fixtures dist/esm/tests && c8 mocha",
     "server": "npm run build:esm && node dist/esm/src/main.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "vercel-build": "npm run server"
   },
   "husky": {
     "hooks": {
